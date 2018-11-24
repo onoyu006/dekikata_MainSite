@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Noto Sans JP';
+  font-size: 1.4em;
+  color: #666666;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #3D6AA4;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 900;
+  text-align: center;
+  padding: 10px 0;
+}
+
+p {
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  color: #777777;
+  background-color: #eeeeee;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+header {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+}
+
+header .menu {
+  display: inline-block;
+  position: absolute;
+  background-color: #3D6AA4;
+  width: 42px;
+  height: 42px;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+section {
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1024px;
+  padding: 20px 0 40px;
+  margin: 0 auto;
+  /*border: solid 1px #f6f6f6;*/
+}
+
+.header-area {
+  margin-bottom: 30px;
+}
+
+.image-area {
+  background-color: #555555;
+  width: 720px;
+  height: 480px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+section.top {
+  margin-bottom: 40px;
+}
+
+section.top .key-visual {
+  width: 100%;
+}
+
+section.top .key-visual img {
+  width: 100%;
+}
+
+section.about p {
+  width: 540px;
+  margin: 0 auto;
+}
+
+svg {
+  display: block;
+}
+
+svg .fill {
+  fill: rgba(245, 219, 54, 0.8);
+}
+
+svg .line {
+  stroke: #3D6AA4;
+  stroke-width: 1px;
+  fill: rgba(0, 0, 0, 0);
+}
+
+section.theme {
+  background-color: rgba(245, 219, 54, 0.8);
+}
+
+section.theme .image-area {
+  position: relative;
+}
+
+section.theme .image-area p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 80%;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 6px 12px;
+}
+
+section.gallery .header-area .header-box {
+  background-color: rgba(245, 219, 54, 0.8);
+  width: 320px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+section.gallery .works-area {
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+section.gallery .works-area .work {
+  display: inline-block;
+  background-color: #f6f6f6;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.8);
+  border: solid 1px #f6f6f6;
+}
+
+section.gallery .gallery-button-area {
+  text-align: center;
+}
+
+section.event {
+  background-color: rgba(245, 219, 54, 0.8);
+}
+
+section.event .guest-areas {
+  text-align: center;
+}
+
+section.event .guest-area {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+}
+
+section.event .guest-area .guest {
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 20px;
+}
+
+section.event .guest-area .guest .icon {
+  background-color: #f6f6f6;
+  width: 100px;
+  height: 100px;
+  border: solid 1px #777777;
+  border-radius: 50%;
+}
+
+section.event .guest-area .guest .icon img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+section.event .guest-area .guest .name {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+section.event .guest-area .description-area {
+  width: 300px;
+  margin: 0 auto;
+}
+
+section.event .guest-area.right {
+  border-left: solid 1px #777777;
+}
+
+dl {
+  margin: 20px 0;
+}
+
+dl dt {
+  font-weight: 700;
+  text-align: center;
+}
+
+dl dd {
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #666666;
+}
+
+footer .link h2 {
+  font-size: 3.2rem;
+  color: #ffffff;
+}
+
+.link-box {
+  width: 100px;
+  height: 100px;
+  background-color: #555555;
+  margin: 0 20px;
+  border-radius: 10px;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+/* ------------- スクロールフェードインDown用 ------------- */
+.fadeInDown {
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* ------------- スクロールフェードインDown用 END ------------- */
