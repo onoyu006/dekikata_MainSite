@@ -1,205 +1,107 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
-html {
-  font-size: 62.5%;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
 body {
-  font-family: 'Noto Sans JP';
-  font-size: 1.4em;
-  color: #666666;
+  line-height: 1;
 }
 
-h2 {
-  font-size: 64px;
-  font-weight: 700;
-  color: #3D6AA4;
-  text-align: center;
+ol, ul {
+  list-style: none;
 }
 
-h3 {
-  font-weight: 900;
-  text-align: center;
-  padding: 10px 0;
+blockquote, q {
+  quotes: none;
 }
 
-p {
-  line-height: 1.8;
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* -- added -- */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
 }
 
-.button {
-  display: inline-block;
-  color: #777777;
-  background-color: #eeeeee;
-  padding: 10px 20px;
-  border-radius: 6px;
+a img {
+  border: none;
 }
 
-header {
-  position: absolute;
-  background-color: white;
-  width: 100%;
+html {
+  font-size: 62.5%;
 }
 
-header .menu {
-  display: inline-block;
-  position: absolute;
-  background-color: #3D6AA4;
-  width: 42px;
-  height: 42px;
-}
-
-main {
+body {
+  color: #666666;
   background-color: #ffffff;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
-section {
-  background-color: #ffffff;
-}
-
-.container {
-  width: 1024px;
-  padding: 20px 0 40px;
-  margin: 0 auto;
-  /*border: solid 1px #f6f6f6;*/
-}
-
-.header-area {
-  margin-bottom: 30px;
-}
-
-.image-area {
-  background-color: #555555;
-  width: 720px;
-  height: 480px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-section.top {
-  margin-bottom: 40px;
-}
-
-section.top .key-visual {
-  width: 100%;
-}
-
-section.top .key-visual img {
-  width: 100%;
-}
-
-section.about p {
-  width: 540px;
-  margin: 0 auto;
-}
-
-svg {
-  display: block;
-}
-
-svg .fill {
-  fill: rgba(245, 219, 54, 0.8);
-}
-
-svg .line {
-  stroke: #3D6AA4;
-  stroke-width: 1px;
-  fill: rgba(0, 0, 0, 0);
-}
-
-section.theme {
-  background-color: rgba(245, 219, 54, 0.8);
-}
-
-section.theme .image-area {
-  position: relative;
-}
-
-section.theme .image-area p {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  width: 80%;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 6px 12px;
-}
-
-section.gallery .header-area .header-box {
-  background-color: rgba(245, 219, 54, 0.8);
-  width: 320px;
-  padding: 10px 20px;
-  margin: 0 auto;
-}
-
-section.gallery .works-area {
-  margin: 0 auto 40px;
-  text-align: center;
-}
-
-section.gallery .works-area .work {
+h2 {
   display: inline-block;
-  background-color: #f6f6f6;
-  width: 300px;
-  height: 300px;
-  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.8);
-  border: solid 1px #f6f6f6;
+  color: #066AA7;
+  font-size: 64px;
+  font-weight: 700;
+  /* background: linear-gradient(transparent 70%, #a7d6ff 70%); */
 }
 
-section.gallery .gallery-button-area {
-  text-align: center;
-}
-
-section.event {
-  background-color: rgba(245, 219, 54, 0.8);
-}
-
-section.event .guest-areas {
-  text-align: center;
-}
-
-section.event .guest-area {
-  display: inline-block;
-  width: 400px;
-  vertical-align: top;
-}
-
-section.event .guest-area .guest {
-  display: inline-block;
+h3 {
   padding: 10px 0;
-  margin: 0 20px;
-}
-
-section.event .guest-area .guest .icon {
-  background-color: #f6f6f6;
-  width: 100px;
-  height: 100px;
-  border: solid 1px #777777;
-  border-radius: 50%;
-}
-
-section.event .guest-area .guest .icon img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-section.event .guest-area .guest .name {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: 900;
   text-align: center;
 }
 
-section.event .guest-area .description-area {
-  width: 300px;
-  margin: 0 auto;
-}
-
-section.event .guest-area.right {
-  border-left: solid 1px #777777;
+p {
+  line-height: 1.8;
 }
 
 dl {
@@ -217,16 +119,239 @@ dl dd {
   margin-bottom: 20px;
 }
 
-footer {
+section {
+  position: relative;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  z-index: -10;
+}
+
+.wrapper {
+  position: relative;
+  background-color: #ffffff;
+  z-index: -100;
+}
+
+/* =====================
+  共通パーツ
+===================== */
+.container {
+  position: relative;
+  width: 1024px;
+  padding: 20px 0 40px;
+  margin: 0 auto;
+  /*border: solid 1px #f6f6f6;*/
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #eeeeee;
+  color: #777777;
+}
+
+svg {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: -10;
+}
+
+svg.flag-bottom {
+  filter: drop-shadow(0 16px 2px rgba(0, 0, 0, 0.1));
+}
+
+svg .fill {
+  fill: #ffdc0b;
+  filter: drop-shadow(0 16px 2px rgba(0, 0, 0, 0.1));
+}
+
+svg .line {
+  stroke: #066AA7;
+  stroke-width: 4.0px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: rgba(0, 0, 0, 0);
+  filter: drop-shadow(0 12px 2px rgba(0, 0, 0, 0.1));
+}
+
+/* =====================
+  固有スタイル
+===================== */
+.top .key-visual {
+  width: 100%;
+}
+
+.top .key-visual img {
+  width: 100%;
+}
+
+.about p {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.about .image-area {
+  background-color: #ffffff;
+}
+
+.about .image-area img {
+  height: auto;
+}
+
+.theme .section {
+  background-color: #ffdc0b;
+}
+
+.theme .section .image-area {
+  position: relative;
+}
+
+.theme .section .image-area p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 80%;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 6px 12px;
+}
+
+.gallery .header-area .header-box {
+  background-color: rgba(255, 220, 11, 0.8);
+  width: 320px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.gallery .works-area {
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.gallery .works-area .work {
+  display: inline-block;
+  background-color: #f6f6f6;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.8);
+  border: solid 1px #f6f6f6;
+}
+
+.gallery .gallery-btn-area {
+  text-align: center;
+}
+
+.event .section {
+  background-color: #ffdc0b;
+}
+
+.event .section .guest-areas {
+  text-align: center;
+}
+
+.event .section .guest-area {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+}
+
+.event .section .guest-area .guest {
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 20px;
+}
+
+.event .section .guest-area .guest .icon {
+  position: relative;
+  background-color: #f6f6f6;
+  width: 100px;
+  height: 100px;
+  border: solid 1px #777777;
+  border-radius: 50%;
+}
+
+.event .section .guest-area .guest .icon img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.event .section .guest-area .guest .name {
+  position: relative;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-top: -10px;
+  z-index: 10;
+}
+
+.event .section .guest-area .description-area {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.event .section .guest-area.right {
+  border-left: solid 1px #777777;
+}
+
+.access {
+  position: relative;
+  margin-bottom: 0;
   background-color: #666666;
 }
 
-footer .link h2 {
+.access .section {
+  background-color: #ffffff;
+}
+
+.access .image-area {
+  height: auto;
+  border: solid 1px #222222;
+}
+
+.access dl {
+  margin: 40px 0;
+}
+
+.access svg.bottom {
+  filter: drop-shadow(0 16px 2px rgba(0, 0, 0, 0.1));
+}
+
+.access svg.bottom .fill {
+  fill: #ffffff;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+}
+
+.header__menu-button {
+  display: inline-block;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-color: #3D6AA4;
+}
+
+.footer {
+  background-color: #666666;
+}
+
+.footer .link h2 {
   font-size: 3.2rem;
   color: #ffffff;
 }
 
-.link-box {
+.footer .link .link-box {
   width: 100px;
   height: 100px;
   background-color: #555555;
@@ -234,9 +359,64 @@ footer .link h2 {
   border-radius: 10px;
 }
 
-.parallax-window {
-  min-height: 400px;
-  background: transparent;
+svg {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: -10;
+}
+
+svg path.fill {
+  fill: #ffdc0b;
+  filter: drop-shadow(0 16px 2px rgba(0, 0, 0, 0.1));
+}
+
+svg path.line {
+  stroke: #066AA7;
+  stroke-width: 4.0px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: rgba(0, 0, 0, 0);
+  filter: drop-shadow(0 12px 2px rgba(0, 0, 0, 0.1));
+}
+
+.header-area {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.image-area {
+  position: relative;
+  max-width: 720px;
+  height: 510px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #555555;
+}
+
+.image-area img {
+  width: 100%;
+  height: auto;
+}
+
+.contents {
+  position: relative;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  z-index: -10;
+}
+
+.contents__background--white {
+  background-color: #ffffff;
+}
+
+.contents__background--key {
+  background-color: #ffdc0b;
+}
+
+.contents__background-bottom {
+  filter: drop-shadow(0 16px 2px rgba(0, 0, 0, 0.1));
 }
 
 /* ------------- スクロールフェードインDown用 ------------- */
