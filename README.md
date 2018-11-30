@@ -6,6 +6,7 @@
 2. 以下のコマンドを実行
 ```
   npm install -g gulp
+  npm install
   gulp
 ```
 `Ctl+C`で終了
