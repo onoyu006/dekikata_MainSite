@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8">
+    <title>できごとのかたち2019</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+          <ul class="nav">
+            <li class="nav-item"><a href="#page1">TOP</a></li>
+            <li class="nav-item"><a href="pages/about.html">ABOUT</a></li>
+            <li class="nav-item"><a href="pages/theme.html">THEME</a></li>
+            <li class="nav-item"><a href="pages/gallery.html">GALLERY</a></li>
+            <li class="nav-item"><a href="pages/event.html">EVENT</a></li>
+            <li class="nav-item"><a href="pages/access.html">ACCESS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrapper">
+      </div>
+    </header>
+    <div class="ribbon-area">
+      <svg>
+        <defs>
+          <linearGradient id="g">
+            <stop offset="0.8" stop-color="#FBE633"/>
+            <stop offset="1.0" stop-color="#FCCD06"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg class="ribbon-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <path d="M0,50 q250,25 500,-25 t500,25 V100 H0 Z" fill="#FBE633" />
+      </svg>
+      <svg class="ribbon-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <path d="M0,50 V50 q250,25 500,-25 t500,25 V0 H0 Z" fill="#FBE633" />
+      </svg>
+    </div>
+    <section class="top-mobile" id="top">
+      <div class="container">
+        <div class="key-visual">
+          <img src="img/top.svg" />
+        </div>
+        <dl class="text-area">
+          <dt>六本木 AXISギャラリー</dt>
+          <dl>2019.1.26（SAT）11:00 - 17:45</dl>
+          <dl>1.27（SUN）11:00 - 19:00</dl>
+        </dl>
+      </div>
+    </section>
+    <main id="pagepiling">
+      <section class="top section" id="top">
+        <div class="container">
+          <div class="key-visual">
+            <img src="img/top.svg" />
+          </div>
+          <dl class="text-area">
+            <dt>六本木 AXISギャラリー</dt>
+            <dl>2019.1.26（SAT）11:00 - 17:45</dl>
+            <dl>1.27（SUN）11:00 - 19:00</dl>
+          </dl>
+        </div>
+      </section>
+      <section class="about section" id="about" style="@media screen and (min-width: 1024px) { display: none; }">
+        <div class="container"> 
+          <div class="header-area">
+            <h2>About</h2>
+            <div class="wrapper">
+              <div class="ribbon6">
+                <h3>できごとのかたち展とは？</h3>
+              </div>
+            </div>
+          </div>
+          <div class="main-content">
+            <div class="image-area">
+              <img src="img/sample.jpg" />
+              <p class="description">
+                出展作品は、各授業担当教員の推薦をもとにして決まります。この展覧会そのものも、展示計画から運営、広報に至るまで、２年次演習授業「展示計画演習」の課題として制作されたものです。本展は、形態やメディアを限定しない多様な情報デザインを伝える展覧会を目指しています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="theme section" id="theme">
+        <div class="container"> 
+          <div class="header-area">
+            <h2>Theme</h2>
+            <div class="wrapper">
+              <div class="ribbon6">
+                <h3>今年度のテーマは「into」です。</h3>
+              </div>
+            </div>
+          </div>
+          <div class="main-content">
+            <div class="image-area">
+              <img src="img/into.jpg" />
+              <p class="description">
+                「into」には入り込む、夢中になるという意味があり、作品との距離を縮めて観てほしい、一歩入り込んで体験してほしい、そういう思いでこのテーマにしました。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery section" id="gallery">
+        <div class="container"> 
+          <div class="header-area">
+            <h2>Gallery</h2>
+            <div class="wrapper">
+              <div class="ribbon6">
+                <h3>できごとのかたち展2019で展示された出展作品</h3>
+              </div>
+            </div>
+          </div>
+          <ul class="works-area">
+            <li class="work"><img src="img/gallery/01.jpg" /></li>
+            <li class="work"><img src="img/gallery/02.jpg" /></li>
+            <li class="work"><img src="img/gallery/03.jpg" /></li>
+            <li class="work"><img src="img/gallery/03.jpg" /></li>
+            <li class="work"><img src="img/gallery/04.jpg" /></li>
+            <li class="work"><img src="img/gallery/05.jpg" /></li>
+          </ul>
+          <div class="gallery-btn">
+            <a class="btn" href="#">作品集はこちら</a>
+          </div>
+        </div>
+      </section>
+      <section class="event section" id="event">
+        <div class="container"> 
+          <div class="header-area">
+            <h2>Event</h2>
+            <div class="wrapper">
+              <div class="ribbon6">
+                <h3>ゲストをお招きしてのトークショー・公開講評を行います。</h3>
+              </div>
+            </div>
+          </div>
+          <div class="guest-area-box">
+            <div class="guest-area">
+              <h4>トークショー</h4>
+              <ul class="guests">
+                <li class="first">
+                  <div class="icon">
+                    <img src="img/talkshow/talk3.jpeg" />
+                  </div>
+                  <p class="name">清水 淳子</p>
+                  <p class="sub">司会</p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <img src="img/talkshow/talk1.png" />
+                  </div>
+                  <p class="name">深津 貴之</p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <img src="img/talkshow/talk2.jpg" />
+                  </div>
+                  <p class="name">こばかな</p>
+                </li>
+              </ul>
+              <div class="description-area">
+                <p>3.3(sat) 14:00 - 15:30<br>ゲストをお招きして<br>テーマ「深津＆こばかなが語る 〜個人の力とチーム力〜」</p>
+              </div>
+            </div>
+            <div class="guest-area">
+              <h4>公開講評</h4>
+              <ul class="guests">
+                <li class="first">
+                  <div class="icon">
+                    <img src="img/review/review1.jpg" />
+                  </div>
+                  <p class="name">宮崎光弘</p>
+                  <p class="sub">司会</p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <img src="img/review/review2.jpg" />
+                  </div>
+                  <p class="name">高見 真平</p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <img src="img/review/review3.jpg" />
+                  </div>
+                  <p class="name">山本晃士ロバート</p>
+                </li>
+              </ul>
+              <div class="description-area">
+                <p>情報デザイン学科の教授や先生方に、出展作品を講評していただきます。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="access section" id="access">
+        <div class="container"> 
+          <div class="header-area">
+            <h2>Access</h2>
+          </div>
+          <div class="main-content">
+            <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.635003530983!2d139.7344819511881!3d35.66136333857082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9c0c46e267%3A0xd7d9376c0df09c20!2z44Ki44Kv44K344K544Ku44Oj44Op44Oq44O8!5e0!3m2!1sja!2sjp!4v1548048627046" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="information-area">
+              <dl>
+                <div class="row">
+                  <dt>会場</dt>
+                  <dd>AXISギャラリー<br>
+                  〒106-003 東京都港区六本木5-17-1 AXISビル4F</dd>
+                </div>
+                <div class="row">
+                  <dt>電車</dt>
+                  <dd>都営地下鉄大江戸線　六本木駅③・⑤番出口<br>
+                  東京メトロ日比谷線　六本木駅③番出口</dd>
+                </div>
+                <div class="row">
+                  <dt>バス</dt>
+                  <dd>渋谷駅前（東口バスターミナルより）<br>
+                  都01 51番乗り場<br>
+                  新橋駅前行きまたは赤坂アークヒルズ行き: 六本木駅前下車<br>
+                  渋88 59番乗り場<br>
+                  新橋駅前行き：六本木五丁目下車</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+      </footer>
+    </main>
+    <ul class="social">
+      <li><a class="social-item" href=""><img src="img/social/twitter.svg" /></a></li>
+      <li><a class="social-item" href=""><img src="img/social/facebook.svg" /></a></li>
+      <li><a class="social-item" href=""><img src="img/social/instagram.svg" /></a></li>
+    </ul>
+
+    <script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+    <script>
+      function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 35.661594, lng: 139.736622},
+          zoom: 16,
+          styles: [
+            {
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#066aa7"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.land_parcel",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels.text",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.business",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "labels.text",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "road.arterial",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "road.local",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "road.local",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            }
+          ]
+        });
+        var iconBase = 'http://maps.google.com/mapfiles/kml/pushpin/';
+        var icons = {
+          pin: {
+            icon: iconBase + 'red-pushpin.png'
+          }
+        };
+        var features = [{
+          position: new google.maps.LatLng(35.661500, 139.736900),
+          type: 'pin'
+        }];
+        features.forEach(function(feature) {
+          var marker = new google.maps.Marker({
+            position: feature.position,
+            icon: icons[feature.type].icon,
+            map: map
+          });
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvvTruW5fZbmDL3OuNFzeqAMNyA4KUK7E&callback=initMap"
+    async defer></script>
+  </body>
+</html>

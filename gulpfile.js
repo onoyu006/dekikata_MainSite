@@ -8,7 +8,7 @@ const notify = require('gulp-notify')
 const config = {
   path: {
     sass: {
-    src:  'src/sass/**/*.scss',
+    src: 'src/sass/**/*.scss',
       dist: 'dist/css'
     }
   }
