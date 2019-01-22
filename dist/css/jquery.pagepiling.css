@@ -47,6 +47,10 @@ html, body {
 .pp-section.pp-table{
     display: table;
 }
+.pp-section::after {
+  content:'';
+  display: block;
+}
 .pp-tableCell {
     display: table-cell;
     vertical-align: middle;
