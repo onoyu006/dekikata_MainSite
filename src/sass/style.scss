@@ -18,8 +18,7 @@ html {
 body {
   color: $TEXT_COLOR;
   background-color: #fff;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-  font-family: "tsukushi a round gothic";
+  font-family: 'TsukuARdGothic-Regular',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -35,7 +34,6 @@ body {
   .wrapper {
     margin: 0 120px;
     vertical-align: top;
-    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 
     .main-title {
       display: inline-block;
@@ -49,7 +47,6 @@ body {
 }
 
 header {
-
   #nav-drawer {
     position: relative;
   }
@@ -65,7 +62,7 @@ header {
     width: 48px;
     height: 48px;
     padding: 14px 13px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 50%;
     vertical-align: middle;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
@@ -113,7 +110,7 @@ header {
     width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
     max-width: 330px;/*最大幅（調整してください）*/
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba($SUB_COLOR, 0.9);
     transition: .3s ease-in-out;/*滑らかに表示*/
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);/*左に隠しておく*/
@@ -124,7 +121,7 @@ header {
     .nav-item {
       margin: 40px 0 40px 20px;
       a {
-        color: #444;
+        color: #fff;
         font-size: 2.6rem;
         font-weight: 700;
       }
@@ -158,7 +155,6 @@ h2 {
 }
 
 h3 {
-  font-family: "tsukushi a round gothic";
   font-size: 1.0rem;
   font-weight: 900;
   text-align: center;
@@ -238,11 +234,13 @@ svg {
   padding-top: 6vh;
 }
 .ribbon-bottom {
+  margin-bottom: 10px;
 }
 
 .container {
   /*background: linear-gradient(90deg, $KEY_COLOR 80%, #FCCD06);*/
-  padding: 0 10px;
+  width: 100%;
+  padding: 0 10px 6vh;
   background: $KEY_COLOR;
 }
 
@@ -333,8 +331,8 @@ svg {
   li {
     display: inline-block;
     padding: 10px 0;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     margin: 0 20px;
     .icon {
       position: relative;
@@ -348,7 +346,7 @@ svg {
       color: #ffffff;
       background-color: rgba(0, 0, 0, 0.7);
       text-align: center;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin-top: -10px;
       padding: 8px 0;
       z-index: 10;
@@ -369,22 +367,27 @@ svg {
 }
 
 .social {
-  position: fixed;
-  bottom: 10px;
-  right: 16px;
+  bottom: 0;
+  text-align: right;
+  padding: 10px;
   li {
     display: inline-block;
     .social-item {
       display: block;
       width: 56px;
       height: 56px;
-      margin-bottom: 1vw;
+      margin: 0 4px 1vw;
       padding: 16px;
       border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
     }
   }
-  z-index: 100;
+  z-index: 1000;
+}
+
+.social-top {
+  background-color: #eee;
 }
 
 /* =====================
@@ -395,6 +398,26 @@ svg {
   display: none;
 }
 
+.top {
+  height: 100vh;
+  .container {
+    .key-visual {
+      img {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+.top-mobile {
+  .container {
+    padding: 0 10px;
+    .key-visual {
+      img {
+        padding: 10vh 0 2vh;
+      }
+    }
+  }
+}
 .top, .top-mobile {
   padding: 0;
   background: #eee;
@@ -404,7 +427,6 @@ svg {
       text-align: center;
       img {
         max-height: 100vh;
-        padding: 10px 0;
       }
     }
     .text-area {
@@ -412,7 +434,6 @@ svg {
       top: 10px;
       right: 16px;
       text-align: right;
-      font-family: "tsukushi a round gothic";
       font-size: 1.6rem;
       line-height: 1.6;
       dt {
@@ -614,6 +635,7 @@ svg {
   }
 
   .container {
+    padding: 0;
     height: 100%;
   }
 
@@ -641,6 +663,7 @@ svg {
     .ribbon-bottom {
       bottom: 0;
       height: 10vh;
+      margin-bottom: 0;
     }
   }
   svg {
@@ -871,19 +894,23 @@ svg {
     }
   }
   .social {
-    .social-item {
-    }
-  }
-  .social {
+    position: fixed;
+    bottom: 10px;
+    right: 16px;
+    margin: 0;
+    padding: 0;
     li {
       display: block;
       .social-item {
         width: 4vw;
         height: 4vw;
-        margin-bottom: 1vw;
+        margin: 0 0 1vw;
         padding: 1.0vw;
       }
     }
     z-index: 100;
+  }
+  .social-top {
+    background-color: rgba(0, 0, 0, 0);
   }
 }

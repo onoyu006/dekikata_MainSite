@@ -81,8 +81,7 @@ html {
 body {
   color: #333333;
   background-color: #fff;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-  font-family: "tsukushi a round gothic";
+  font-family: 'TsukuARdGothic-Regular',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -99,7 +98,6 @@ body {
 .header .wrapper {
   margin: 0 120px;
   vertical-align: top;
-  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
 .header .wrapper .main-title {
@@ -134,7 +132,7 @@ header #nav-open {
   width: 48px;
   height: 48px;
   padding: 14px 13px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
   vertical-align: middle;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
@@ -188,7 +186,7 @@ header #nav-content {
   max-width: 330px;
   /*最大幅（調整してください）*/
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(6, 106, 167, 0.9);
   transition: .3s ease-in-out;
   /*滑らかに表示*/
   -webkit-transform: translateX(-105%);
@@ -205,7 +203,7 @@ header .nav .nav-item {
 }
 
 header .nav .nav-item a {
-  color: #444;
+  color: #fff;
   font-size: 2.6rem;
   font-weight: 700;
 }
@@ -237,7 +235,6 @@ h2 {
 }
 
 h3 {
-  font-family: "tsukushi a round gothic";
   font-size: 1.0rem;
   font-weight: 900;
   text-align: center;
@@ -308,9 +305,14 @@ svg {
   padding-top: 6vh;
 }
 
+.ribbon-bottom {
+  margin-bottom: 10px;
+}
+
 .container {
   /*background: linear-gradient(90deg, $KEY_COLOR 80%, #FCCD06);*/
-  padding: 0 10px;
+  width: 100%;
+  padding: 0 10px 6vh;
   background: #FBE633;
 }
 
@@ -415,8 +417,8 @@ svg {
 .guests li {
   display: inline-block;
   padding: 10px 0;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin: 0 20px;
 }
 
@@ -434,7 +436,7 @@ svg {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-top: -10px;
   padding: 8px 0;
   z-index: 10;
@@ -454,10 +456,10 @@ svg {
 }
 
 .social {
-  position: fixed;
-  bottom: 10px;
-  right: 16px;
-  z-index: 100;
+  bottom: 0;
+  text-align: right;
+  padding: 10px;
+  z-index: 1000;
 }
 
 .social li {
@@ -468,10 +470,15 @@ svg {
   display: block;
   width: 56px;
   height: 56px;
-  margin-bottom: 1vw;
+  margin: 0 4px 1vw;
   padding: 16px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.social-top {
+  background-color: #eee;
 }
 
 /* =====================
@@ -479,6 +486,22 @@ svg {
 ===================== */
 #pagepiling {
   display: none;
+}
+
+.top {
+  height: 100vh;
+}
+
+.top .container .key-visual img {
+  padding: 10px 0;
+}
+
+.top-mobile .container {
+  padding: 0 10px;
+}
+
+.top-mobile .container .key-visual img {
+  padding: 10vh 0 2vh;
 }
 
 .top, .top-mobile {
@@ -496,7 +519,6 @@ svg {
 
 .top .container .key-visual img, .top-mobile .container .key-visual img {
   max-height: 100vh;
-  padding: 10px 0;
 }
 
 .top .container .text-area, .top-mobile .container .text-area {
@@ -504,7 +526,6 @@ svg {
   top: 10px;
   right: 16px;
   text-align: right;
-  font-family: "tsukushi a round gothic";
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -682,6 +703,7 @@ svg {
     background-color: rgba(0, 0, 0, 0);
   }
   .container {
+    padding: 0;
     height: 100%;
   }
   .header-area {
@@ -708,6 +730,7 @@ svg {
   .ribbon-area .ribbon-bottom {
     bottom: 0;
     height: 10vh;
+    margin-bottom: 0;
   }
   svg {
     display: block;
@@ -899,6 +922,11 @@ svg {
     margin-bottom: 40px;
   }
   .social {
+    position: fixed;
+    bottom: 10px;
+    right: 16px;
+    margin: 0;
+    padding: 0;
     z-index: 100;
   }
   .social li {
@@ -907,7 +935,10 @@ svg {
   .social li .social-item {
     width: 4vw;
     height: 4vw;
-    margin-bottom: 1vw;
+    margin: 0 0 1vw;
     padding: 1.0vw;
+  }
+  .social-top {
+    background-color: rgba(0, 0, 0, 0);
   }
 }
